@@ -131,11 +131,12 @@
 
     <script>
         if("serviceWorker" in navigator) {
-            navigator.serviceWorker("service-worker.js")
+            navigator.serviceWorker.register("service-worker.js")
             .then(() => console.log("AW registrado com sucesso"))
             .catch(err => console.error("Erro ao registrar SE", err))
 
                 }
     </script>
 </body>
+
 </html>
